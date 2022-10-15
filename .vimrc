@@ -280,7 +280,20 @@ nnoremap <leader>c :call ToggleQuickFix()<CR>
 nnoremap <leader>vv <C-w>v
 nnoremap <leader>vs <C-w>s
 nnoremap <leader>vc <C-w>c
+nnoremap <leader>v= <C-w>=
 nnoremap <leader>vt :tabnew<CR>
+nnoremap <leader>vd :tabclose<CR>
+
+" Shell Binding
+nnoremap <leader>sv :vert terminal<CR>
+nnoremap <leader>ss :shell<CR>
+nnoremap <leader>si :terminal<CR>
+
+" Terminal Navigation
+tnoremap <C-h> <C-\><C-n><C-w>h
+tnoremap <C-l> <C-\><C-n><C-w>l
+tnoremap <C-j> <C-\><C-n><C-w>j
+tnoremap <C-k> <C-\><C-n><C-w>k
 
 " Window Split Navigatin Key Bindings
 nnoremap <C-h> <C-w>h
