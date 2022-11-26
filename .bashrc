@@ -1,7 +1,7 @@
 set -o vi
 
-alias pd='pushd > /dev/null 2&1'
-alias pu='popd > /dev/null 2&1'
+alias pd='pushd $@ > /dev/null 2>&1'
+alias pu='popd > /dev/null 2>&1'
 alias dr='dirs -v'
 
 # pp commad is used to jump to a directory from dir stack index
