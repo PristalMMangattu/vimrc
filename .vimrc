@@ -13,16 +13,16 @@ call plug#begin()
 Plug 'preservim/nerdtree'
 
 " gruvbox - Vim Theam
-Plug 'morhetz/gruvbox.git'
+Plug 'morhetz/gruvbox'
 
 " vim-airline - status bas
-Plug 'vim-airline/vim-airline.git'
+Plug 'vim-airline/vim-airline'
 
 " vim-fugitive - git bindings
-Plug 'tpope/vim-fugitive.git'
+Plug 'tpope/vim-fugitive'
 
 " fzf - fuzzy finder
-Plug 'junegunn/fzf.git'
+Plug 'junegunn/fzf'
 
 
 " Initialize plugin system
@@ -193,11 +193,12 @@ nnoremap <leader>sop :source %<CR>
 map <leader>h :noh<CR>
 
 "Toggle NerdTree
-map <leader>t :NERDTreeToggle<CR>
+map <leader>tt :NERDTreeToggle<CR>
+map <leader>tr :NERDTreeFind<CR>
 
 "Cscope.vim settings
 nnoremap <leader>fa :call CscopeFindInteractive(expand('<cword>'))<CR>
-nnoremap <leader>l :call ToggleLocationList()<CR>
+nnoremap <leader>lt :call ToggleLocationList()<CR>
 
 " s: Find this C symbol
 nnoremap <leader>fs :call CscopeFind('s', expand('<cword>))<CR>
@@ -221,7 +222,7 @@ nnoremap <leader>fe :call CscopeFind('e', expand('<cword>))<CR>
 nnoremap <leader>ff :call CscopeFind('f', expand('<cword>))<CR>
 
 " i: Find files including this file
-nnoremap <leader>fi :call CscopeFind('i', expand('<cword>))<CR>
+nnoremap <leader>in :call CscopeFind('i', expand('<cword>))<CR>
 
 " END of Cscope.vim settings
 
@@ -249,19 +250,19 @@ nnoremap <leader>yd :YcmCompleter YcmDiags<CR>
 
 
 " FZF - Key Bindings
-nnoremap <leader>zf :Files<CR>
+nnoremap <leader>fi :Files<CR>
 
-nnoremap <leader>zb :Buffers<CR>
+nnoremap <leader>bu :Buffers<CR>
 
-nnoremap <leader>zi :Lines<CR>
+nnoremap <leader>li :Lines<CR>
 
-nnoremap <leader>zl :BLines<CR>
+nnoremap <leader>bl :BLines<CR>
 
-nnoremap <leader>zw :Windows<CR>
+nnoremap <leader>wi :Windows<CR>
 
-nnoremap <leader>zch :History<CR>
+nnoremap <leader>hi :History<CR>
 
-nnoremap <leader>zsh :History/<CR>
+nnoremap <leader>ii :History/<CR>
 " END OF FZF - Key Bindings
 
 " Toggle quick fix list
@@ -285,9 +286,9 @@ nnoremap <leader>vt :tabnew<CR>
 nnoremap <leader>vd :tabclose<CR>
 
 " Shell Binding
-nnoremap <leader>sv :vert terminal<CR>
+nnoremap <leader>tv :vert terminal<CR>
 nnoremap <leader>ss :shell<CR>
-nnoremap <leader>si :terminal<CR>
+nnoremap <leader>te :terminal<CR>
 
 " Terminal Navigation
 tnoremap <C-h> <C-\><C-n><C-w>h
@@ -299,14 +300,14 @@ tnoremap <C-k> <C-\><C-n><C-w>k
 nnoremap <C-h> <C-w>h
 nnoremap <C-j> <C-w>j
 nnoremap <C-k> <C-w>k
-nnoremap <C-l> <C-l>l
+nnoremap <C-l> <C-w>l
 
 " Leader Key Binding for Saving, Quiting .. etc
 
 " Write
-nnoremap <leader>w :w<CR>
+nnoremap <leader>wr :w<CR>
 " Quit
-nnoremap <leader>q :q<CR>
+nnoremap <leader>qu :q<CR>
 " Quit All
 nnoremap <leader>qa :qa<CR>
 
