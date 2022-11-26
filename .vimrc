@@ -39,7 +39,7 @@ set rtp+=~/.fzf
 au TextChanged *
 au InsertLeave *
 
-autocmd vimenter * ++nested colorscheme gruvbox
+autocmd vimenter * nested colorscheme gruvbox
 syntax on
 set number 
 set relativenumber
@@ -291,10 +291,10 @@ nnoremap <leader>ss :shell<CR>
 nnoremap <leader>te :terminal<CR>
 
 " Terminal Navigation
-tnoremap <C-h> <C-\><C-n><C-w>h
-tnoremap <C-l> <C-\><C-n><C-w>l
-tnoremap <C-j> <C-\><C-n><C-w>j
-tnoremap <C-k> <C-\><C-n><C-w>k
+"tnoremap <C-h> <C-\><C-n><C-w>h
+"tnoremap <C-l> <C-\><C-n><C-w>l
+"tnoremap <C-j> <C-\><C-n><C-w>j
+"tnoremap <C-k> <C-\><C-n><C-w>k
 
 " Window Split Navigatin Key Bindings
 nnoremap <C-h> <C-w>h
