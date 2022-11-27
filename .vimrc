@@ -1,3 +1,4 @@
+set fileformat=unix
 call plug#begin()
 " The default plugin directory will be as follows:
 "   - Vim (Linux/macOS): '~/.vim/plugged'
@@ -22,7 +23,8 @@ Plug 'vim-airline/vim-airline'
 Plug 'tpope/vim-fugitive'
 
 " fzf - fuzzy finder
-Plug 'junegunn/fzf'
+Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
+Plug 'junegunn/fzf.vim'
 
 
 " Initialize plugin system
@@ -33,7 +35,7 @@ call plug#end()
 set background=light 
 
 set rtp+=/usr/local/bin/fzf
-set rtp+=~/.fzf
+set rtp+=~/.fzf/
 
 "Auto Save
 au TextChanged *
