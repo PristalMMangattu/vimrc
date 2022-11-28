@@ -26,6 +26,8 @@ Plug 'tpope/vim-fugitive'
 Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
 Plug 'junegunn/fzf.vim'
 
+" vim wiki for personal notes
+Plug 'vimwiki/vimwiki'
 
 " Initialize plugin system
 call plug#end()
@@ -303,15 +305,6 @@ nnoremap <C-h> <C-w>h
 nnoremap <C-j> <C-w>j
 nnoremap <C-k> <C-w>k
 nnoremap <C-l> <C-w>l
-
-" Leader Key Binding for Saving, Quiting .. etc
-
-" Write
-nnoremap <leader>wr :w<CR>
-" Quit
-nnoremap <leader>qu :q<CR>
-" Quit All
-nnoremap <leader>qa :qa<CR>
 
 " Start intractive EasyAlign for a motion/text object (eg. gaip)
 xmap ga <Plug>(EasyAlign)
