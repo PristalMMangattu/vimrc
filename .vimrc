@@ -202,7 +202,7 @@ map <leader>tr :NERDTreeFind<CR>
 
 "Cscope.vim settings
 nnoremap <leader>fa :call CscopeFindInteractive(expand('<cword>'))<CR>
-nnoremap <leader>lt :call ToggleLocationList()<CR>
+nnoremap <leader>ll :call ToggleLocationList()<CR>
 
 " s: Find this C symbol
 nnoremap <leader>fs :call CscopeFind('s', expand('<cword>))<CR>
@@ -279,7 +279,7 @@ function! ToggleQuickFix()
 	endif
 endfunction
 
-nnoremap <leader>c :call ToggleQuickFix()<CR>
+nnoremap <leader>cl :call ToggleQuickFix()<CR>
 
 " Split Key Bindings
 nnoremap <leader>vv <C-w>v
