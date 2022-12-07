@@ -10,30 +10,22 @@ call plug#begin()
 
 " Make sure you use single quotes
 
-" NERDTree - File Explorer Plugin
 Plug 'preservim/nerdtree'
-
-" gruvbox - Vim Theam
 Plug 'morhetz/gruvbox'
-
-" vim-airline - status bas
 Plug 'vim-airline/vim-airline'
-
-" vim-fugitive - git bindings
 Plug 'tpope/vim-fugitive'
-
-" fzf - fuzzy finder
+Plug 'ycm-core/YouCompleteMe'
 Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
 Plug 'junegunn/fzf.vim'
-
-" vim wiki for personal notes
 Plug 'vimwiki/vimwiki'
+Plug 'easymotion/vim-easymotion'
+Plug 'dhruvasagar/vim-table-mode'
+Plug 'junegunn/vim-easy-align'
 
 " Initialize plugin system
 call plug#end()
 
 " Grubbox settings
-" set background=dark " setting dark mode for gruvbox
 set background=light 
 
 set rtp+=/usr/local/bin/fzf
@@ -197,12 +189,11 @@ nnoremap <leader>sop :source %<CR>
 map <leader>h :noh<CR>
 
 "Toggle NerdTree
-map <leader>tt :NERDTreeToggle<CR>
-map <leader>tr :NERDTreeFind<CR>
+map <leader>nt :NERDTreeToggle<CR>
+map <leader>nr :NERDTreeFind<CR>
 
 "Cscope.vim settings
 nnoremap <leader>fa :call CscopeFindInteractive(expand('<cword>'))<CR>
-nnoremap <leader>ll :call ToggleLocationList()<CR>
 
 " s: Find this C symbol
 nnoremap <leader>fs :call CscopeFind('s', expand('<cword>))<CR>
@@ -231,22 +222,18 @@ nnoremap <leader>in :call CscopeFind('i', expand('<cword>))<CR>
 " END of Cscope.vim settings
 
 " You Complete Me - Key Bindings
-nnoremap <leader>gt :YcmCompleter GoTo<CR>
 
 " This binding is conflicting with that of Cscope, so disabled.
 " nnoremap <leader>gi :YcmCompleter FixIt<CR>
+nnoremap <leader>gt :YcmCompleter GoTo<CR>
 
 nnoremap <leader>gd :YcmCompleter GetDoc<CR>
 
-nnoremap <leader>gtp :YcmCompleter GoTo<CR>
+nnoremap <leader>in :YcmCompleter GoToInclude<CR>
 
-nnoremap <leader>gp :YcmCompleter GetParent<CR>
+nnoremap <leader>df :YcmCompleter GoToDefinition<CR>
 
-nnoremap <leader>gti :YcmCompleter GoToInclude<CR>
-
-noremap <leader>gdf :YcmCompleter GoToDefinition<CR>
-
-nnoremap <leader>gdc :YcmCompleter GoToDeclaration<CR>
+nnoremap <leader>dc :YcmCompleter GoToDeclaration<CR>
 
 nnoremap <leader>yd :YcmCompleter YcmDiags<CR>
 
@@ -320,5 +307,17 @@ nnoremap <C-n> :bn<CR>
 nnoremap <C-p> :bp<CR>
 
 " Toggle Relative number and line number
-nnoremap <leader> :set nu!<CR> :set rnu!<CR>
+nnoremap <leader>ll :set nu!<CR> :set rnu!<CR>
 
+nnoremap gl $
+nnoremap gh 0
+
+" vimwiki mappings
+nnoremap <leader>tb :VimwikiTable<Space>
+nnoremap <leader>tl :VimwikiToggleListItem<CR>
+
+" Start interactive EasyAlign in visual mode (e.g. vipga)
+xmap ga <Plug>(EasyAlign)
+
+" Start interactive EasyAlign for a motion/text object (e.g. gaip)
+nmap ga <Plug>(EasyAlign)
