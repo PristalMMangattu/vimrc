@@ -229,7 +229,7 @@ nnoremap <leader>gt :YcmCompleter GoTo<CR>
 
 nnoremap <leader>gd :YcmCompleter GetDoc<CR>
 
-nnoremap <leader>in :YcmCompleter GoToInclude<CR>
+nnoremap <leader>nc :YcmCompleter GoToInclude<CR>
 
 nnoremap <leader>df :YcmCompleter GoToDefinition<CR>
 
