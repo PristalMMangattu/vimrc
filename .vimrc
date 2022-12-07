@@ -21,6 +21,11 @@ Plug 'vimwiki/vimwiki'
 Plug 'easymotion/vim-easymotion'
 Plug 'dhruvasagar/vim-table-mode'
 Plug 'junegunn/vim-easy-align'
+Plug 'vim-scripts/taglist.vim'
+Plug 'preservim/nerdcommenter'
+Plug 'frazrepo/vim-rainbow'
+Plug 'airblade/vim-gitgutter'
+Plug 'mileszs/ack.vim'
 
 " Initialize plugin system
 call plug#end()
