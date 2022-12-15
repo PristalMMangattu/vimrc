@@ -30,6 +30,8 @@ Plug 'mileszs/ack.vim'
 " Initialize plugin system
 call plug#end()
 
+set encoding=utf-8
+
 " Grubbox settings
 set background=light 
 
@@ -261,6 +263,9 @@ nnoremap <leader>hi :History<CR>
 nnoremap <leader>ii :History/<CR>
 " END OF FZF - Key Bindings
 
+" ack.vim key bindings
+nnoremap <leader>ag :Ag<CR>
+
 " Toggle quick fix list
 
 function! ToggleQuickFix()
@@ -271,7 +276,7 @@ function! ToggleQuickFix()
 	endif
 endfunction
 
-nnoremap <leader>cl :call ToggleQuickFix()<CR>
+nnoremap <leader>ll :call ToggleQuickFix()<CR>
 
 " Split Key Bindings
 nnoremap <leader>vv <C-w>v
@@ -283,7 +288,7 @@ nnoremap <leader>vd :tabclose<CR>
 
 " Shell Binding
 nnoremap <leader>tv :vert terminal<CR>
-nnoremap <leader>ss :shell<CR>
+nnoremap <leader>ss :!/bin/bash<CR>
 nnoremap <leader>te :terminal<CR>
 
 " Terminal Navigation
@@ -312,7 +317,7 @@ nnoremap <C-n> :bn<CR>
 nnoremap <C-p> :bp<CR>
 
 " Toggle Relative number and line number
-nnoremap <leader>ll :set nu!<CR> :set rnu!<CR>
+nnoremap <leader>ln :set nu!<CR> :set rnu!<CR>
 
 nnoremap gl $
 nnoremap gh 0
