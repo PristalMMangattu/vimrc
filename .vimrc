@@ -24,6 +24,7 @@ Plug 'junegunn/vim-easy-align'
 Plug 'vim-scripts/taglist.vim'
 Plug 'preservim/nerdcommenter'
 Plug 'frazrepo/vim-rainbow'
+Plug 'airblade/vim-rooter'
 Plug 'airblade/vim-gitgutter'
 Plug 'mileszs/ack.vim'
 

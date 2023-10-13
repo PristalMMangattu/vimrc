@@ -1,0 +1,49 @@
+[
+	{
+		"name" : "git",
+		"using" : "apt",
+		"permission" : "sudo"
+	},
+	{
+		"name" : "docker",
+		"using" : "apt",
+		"permission" : "sudo"
+	},
+	{
+		"name" : "neovim",
+		"using" : "apt",
+		"permission" : "sudo"
+	},
+	{
+		"name" : "exuberant-ctags",
+		"using" : "apt",
+		"permission" : "sudo"
+	},
+	{
+		"name" : "tmux",
+		"using" : "apt",
+		"permission" : "sudo"
+	},
+	{
+		"name" : "build-essential",
+		"using" : "apt",
+		"permission" : "sudo"
+	},
+	{
+		"name" : "clang",
+		"using" : "apt",
+		"permission" : "sudo"
+	},
+	{
+		"name" : "silversearcher-ag",
+		"using" : "apt-get",
+		"permission" : "sudo"
+	},
+	{
+		"name" : "silversearcher-ag",
+		"using" : "apt-get",
+		"permission" : "sudo"
+	}
+]
+
+
