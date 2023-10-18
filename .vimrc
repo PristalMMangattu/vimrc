@@ -303,6 +303,14 @@ nnoremap <C-j> <C-w>j
 nnoremap <C-k> <C-w>k
 nnoremap <C-l> <C-w>l
 
+" vim easy motion settings
+" hi EasyMotionTarget ctermbg=none ctermfg=green
+" hi EasyMotionShade ctermbg=none ctermfg=blue
+" hi EasyMotionMoveHL ctermbg=none ctermfg=black
+" hi EasyMotionIncSearch ctermbg=none ctermfg=black
+hi EasyMotionTarget2First ctermbg=none ctermfg=darkred
+hi EasyMotionTarget2Second ctermbg=none ctermfg=darkred
+
 " Start intractive EasyAlign for a motion/text object (eg. gaip)
 xmap ga <Plug>(EasyAlign)
 
