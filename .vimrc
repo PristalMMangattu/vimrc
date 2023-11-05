@@ -186,7 +186,7 @@ set ruler
 set lbr
 
 " Search for the word under the curser in the current directory
-nnoremap <f5> :grep <cword> *<CR> 
+nnoremap <f5> :grep <cword> * -r <CR> 
 
 " CUSTOM LEADER KEY MAPPING
 
