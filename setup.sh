@@ -121,6 +121,9 @@ sudo apt install clang
 sudo apt-get install silversearcher-ag
 sudo apt install lsb-core
 
+# required for display settings.
+sudo apt install gnome-control-center
+
 
 DIFFMERGE_VER=4.2.0.697
 echo Diffmerge published at : https://sourcegear.com/diffmerge/downloads.html
