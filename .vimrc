@@ -317,8 +317,11 @@ nnoremap <C-n> :bn<CR>
 " Previous
 nnoremap <C-p> :bp<CR>
 
-" Toggle Relative number and line number
-nnoremap <leader>ln :set nu!<CR> :set rnu!<CR>
+" Toggle Relative number and line number (for vim)
+" nnoremap <leader>ln :set nu!<CR> :set rnu!<CR>
+
+" Toggle Relative number and line number (for neovim)
+noremap <leader>ln :set norelativenumber!<CR> :set nonu!<CR>
 
 nnoremap gl $
 nnoremap gh 0
